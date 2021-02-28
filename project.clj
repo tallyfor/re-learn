@@ -11,7 +11,7 @@
                   ["change" "version" "leiningen.release/bump-version"]
                   ["vcs" "commit"]
                   ["vcs" "push"]]
-  :dependencies [[re-frame "0.10.9"]
+  :dependencies [[re-frame "1.2.0"]
                  [prismatic/dommy "1.1.0"]
                  [prismatic/schema "1.1.12"]]
   :plugins [[lein-cljsbuild "1.1.7"]

@@ -188,7 +188,8 @@
              [:button.dismiss {:on-click #(re-frame/dispatch [::model/skip-tutorial (get-in @tutorial [:tutorial :id])])}
               "Dismiss"]]
 
-            (or auto-accept? (:accepted? @tutorial))
+            (and (:current-lesson @tutorial)
+              (or auto-accept? (:accepted? @tutorial)))
             [:div
              [lesson-view (:current-lesson @tutorial)]
              (when context?
