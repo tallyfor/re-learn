@@ -1,0 +1,4 @@
+{:paths ["src"]
+ :deps  {re-frame/re-frame {:mvn/version "1.2.0"}
+         prismatic/dommy   {:mvn/version "1.1.0"}
+         prismatic/schema  {:mvn/version "1.1.12"}}}
