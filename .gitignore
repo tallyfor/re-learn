@@ -14,3 +14,4 @@ pom.xml.asc
 /resources/public/js
 /dev-resources/public/*/js
 /dist
+.idea/
