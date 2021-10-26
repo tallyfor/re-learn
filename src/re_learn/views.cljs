@@ -173,7 +173,7 @@
    rather than starting the tutorial straight away when true (legacy behaviour)"
   [{:keys [context? auto-accept?]
     :or {context? false
-         auto-accept? false}}]
+         auto-accept? true}}]
   (let [tutorial (re-frame/subscribe [::model/current-tutorial])
         help-mode? (re-frame/subscribe [::model/help-mode?])]
     (fn []
